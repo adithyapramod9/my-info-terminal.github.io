@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type"
+		content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,
+		minimum-scale=1,initial-scale=1">
+
+	<script src=
+	"https://code.jquery.com/jquery-3.3.1.min.js">
+	</script>
+
+	<script src=
+	"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+	</script>
+
+	<link rel="stylesheet" href=
+	"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+
+	<style type="text/css">
+		.terminal,
+		span,
+		.cmd,
+		div {
+			--color: rgb(19, 129, 5, 0.99);
+		}
+
+		.terminal,
+		span {
+			--size: 1.4;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		$('body').terminal({
+			iam: function (name) {
+				this.echo('Hello, ' + name +
+					' Welcome to Tarekkk offical console');
+			},
+			founder: function () {
+				this.echo('Adithya_pramod');
+			},
+			help: function () {
+				this.echo('iam - this is a command '
+				+ 'pass your name as argument\n'
+				+ '"founder" commands to know the founder');
+            },
+                Founder_DOB : function () {
+				this.echo('16/06/2007');
+			},
+              founder_ascle : function () {
+				this.echo('whghg');
+
+              },
+			  commands : function () {
+				this.echo('commands - Founder_ascle , Founder_DOB');
+			
+			  },	          
+		}, {
+			greetings: 'Tarekkk - type "help" for more info'
+				+ ' find creator, argument '
+				+ 'have fun!'
+		});
+	</script>
+</body>
+
+</html>
